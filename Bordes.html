@@ -5,22 +5,46 @@
     <meta name="viewport" content="device=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        #wrapper {width: 80%;}
         /*probando bordes CSS */
-        h1{color: rgb(103, 21, 21);
+        #titulo{color: rgb(103, 21, 21);
         text-align: center;
         border:5px solid orangered;
         /* border-radius:20px 40px; */
-        border-radius:50% ;
-        background-color: #ddd;}
-    #marco {border-left:2px solid navy;
-            background-color: blue;}
-    strong{border:1px dotted red}
+        /*border-radius:50% ;  */
+        background-color: #ddd;
+        box-shadow: 10px 10px 10px gray; /*sombra de caja */
+        }
+        #marco {border-left:8px solid navy;
+            background-color: rgb(102, 102, 226);}
+        strong{border:1px dotted red}
+        #sombras {text-align: center;
+                    box-shadow:5px 5px 15px orange,
+                            -5px 5px 15px orange,
+                            5px -5px 15px orange,
+                            -5px -5px 15px orange;
+                    ;}
+        #textosombra {text-align: center;
+                        /*   text-shadow: -5px -5px 5px orange,
+                        5px -5px 5px orange  *//*texto en llamas*/
+                    text-shadow: 1px 1px 0px fuchsia,
+                                -1px 1px 0px fuchsia,
+                                1px -1px 0px fuchsia,
+                                -1px -1px 0px fuchsia
+                        ;}
     </style>
 </head>
 <body>
-    <h1>Lorem ipsum dolor, sit amet ?</h1>
+    <div id="wrapper">
+    <h1 id="titulo" >Lorem ipsum dolor, sit amet ?</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong> quibusdam amet culpa facere ab aliquid quaerat.</strong> Quaerat asperiores sed nihil illum amet. Aperiam, ratione neque eius totam quidem debitis officiis.</p>
     <p id="marco">Atque distinctio reiciendis nulla deserunt laudantium nam delectus ducimus quaerat. Quas rerum deserunt voluptas unde recusandae non voluptatem aspernatur, libero labore consequatur! A minima, natus quia deserunt laborum cumque. Corporis.</p>
     <p>Ipsam reprehenderit odit, exercitationem rerum dignissimos quasi, iusto alias enim ad eos laudantium cumque, reiciendis sequi! Fugit, sequi soluta? Unde dolor excepturi expedita iure nihil veritatis ipsum hic, blanditiis necessitatibus?</p>
+    <p></p>
+    <h1 id="sombras" >Jugando con la sombra</h1>
+    <p></p>
+    <h1 id="textosombra">Texto con sombras</h1>
+    </div>
 </body>
 </html>
